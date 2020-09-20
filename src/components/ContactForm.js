@@ -3,8 +3,8 @@ import React, {useState,useEffect} from 'react';
 const ContactForm = () => {
 
         const initialFieldValues = {
-            fName: '',
-            nName: '',
+            fname: '',
+            lname: '',
             mobile: '',
             email: '',
             address: ''
@@ -27,7 +27,7 @@ const ContactForm = () => {
                 if(values.mobile.length === 10){
 
                     const posts = [
-                        {id: values.email, FName: values.fName,LName: values.lName, mobile: values.mobile, address: values.address},
+                        {id: values.email, fname: values.fName, lname: values.lName, mobile: values.mobile, address: values.address},
                      ];
                      
                      if(localStorage.getItem('data')==null){
