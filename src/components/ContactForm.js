@@ -4,7 +4,7 @@ const ContactForm = () => {
 
         const initialFieldValues = {
             fName: '',
-            nName: '',
+            lName: '',
             mobile: '',
             email: '',
             address: ''
@@ -27,7 +27,7 @@ const ContactForm = () => {
                 if(values.mobile.length === 10){
 
                     const posts = [
-                        {id: values.email, FName: values.fName,LName: values.lName, mobile: values.mobile, address: values.address},
+                        {id: values.email, fName: values.fName,lName: values.lName, mobile: values.mobile, address: values.address},
                      ];
                      
                      if(localStorage.getItem('data')==null){
