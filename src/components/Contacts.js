@@ -48,7 +48,7 @@ const Contacts = () => {
                     <td>contact.fName</td>
                     <td>contact.lName</td>
                     <td>contact.mobile</td>
-                    <td>contact.id</td>
+                    <td>contact.email</td>
                     <td>contact.address</td>
                     </tr>
         }
