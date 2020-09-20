@@ -6,8 +6,8 @@ const Contacts = () => {
     const List = e => {
 
         if(localStorage.getItem('data') !== null){
-            var retrievedData = localStorage.getItem("data");
-        var deatils = JSON.parse(retrievedData);
+            let retrievedData = localStorage.getItem("data");
+        let deatils = JSON.parse(retrievedData);
         {deatils.map(user => {
             console.log(user)
         })}
@@ -43,9 +43,15 @@ const Contacts = () => {
                     </tr>
                 </thead>
                 <tbody>
+        details.map(contact =>{
                     <tr>
-                    <td></td>
+                    <td>contact.fName</td>
+                    <td>contact.lName</td>
+                    <td>contact.mobile</td>
+                    <td>contact.id</td>
+                    <td>contact.address</td>
                     </tr>
+        }
                 </tbody>
             </div>
         </div>
